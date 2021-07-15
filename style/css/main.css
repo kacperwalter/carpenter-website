@@ -29,6 +29,7 @@ html {
   justify-content: flex-end;
   flex-direction: row;
   align-items: center;
+  position: sticky;
 }
 
 .top-label .phone {
