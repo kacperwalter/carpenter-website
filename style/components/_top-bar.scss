@@ -1,11 +1,35 @@
 .top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    @media (max-width: 992px) {
+        justify-content: center;
+    }
+
+    &__logo {
+        height: 90px;
+        margin: 15px 15px 15px 10px;
+    }
+
+    &__information {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .information-icon:not(:last-child) {
+        margin-right: 20px;
+    }
     
     .information-icon {
         height: 50px;
         width: 230px;
         display: flex;
         align-items: center;
-        
+        margin: 15px 0 15px 0;
+
         &__image {
             height: 48px;
             padding-right: 20px;
