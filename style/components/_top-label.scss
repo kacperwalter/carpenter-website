@@ -1,0 +1,26 @@
+.top-label {
+    background-color: var(--background-gray);
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+
+    .phone {
+        color: var(--text-gray);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 30px;
+        
+        &__icon {
+           height: 20px;
+           padding-right:10px;
+        }
+
+        &__number {
+            font-size: 100px;
+        }
+    }
+}
