@@ -55,6 +55,7 @@ html {
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 992px) {
@@ -76,6 +77,12 @@ html {
 
 .top-bar .information-icon:not(:last-child) {
   margin-right: 20px;
+}
+
+@media (max-width: 458px) {
+  .top-bar .information-icon:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .top-bar .information-icon {
