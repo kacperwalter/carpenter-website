@@ -1,0 +1,31 @@
+.services {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    .service-card {
+        width: 320px;
+        position: relative;
+
+        &__image {
+            width: 320px;
+            z-index: 0;
+        }
+
+        &__copy-box {
+            position: absolute;
+            top: 0;
+        }
+
+        &__title {
+
+        }
+
+        &__copy {
+
+        }
+    }
+}
