@@ -1,12 +1,63 @@
 .hero-section {
     width: 100vw;
-    height: 700px;
+    height: 500px;
+    @media (max-width: 768px) {
+        height: 700px;
+    }
+    position: relative;
+
+    &__copy {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        background-color: var(--background-dark-brown-opacity);
+        border-radius: 5px;
+        padding: 50px 70px;
+        width: 1200px;
+        @media (max-width: 1200px) {
+            width: 1000px;
+        }
+        @media (max-width: 1000px) {
+            width: 800px;
+        }
+        @media (max-width: 992px) {
+            width: 85%;
+        }
+    }
+
+    &__heading {
+        font-size: 40px;
+    }
+
+    &__bar {
+        border-bottom: 3px solid white;
+        width: 60px;
+        margin: 20px 0 20px 0;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 25px;
+        @media (max-width: 478px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
 
     .wrapper-slide {
         position: relative;
         height: inherit;
         width: inherit;
         overflow: hidden;
+        z-index: 0;
       }
       
       .slideshow {
