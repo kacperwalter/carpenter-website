@@ -26,7 +26,6 @@
         // text-align: center;
         z-index: 1;
         color: white;
-        font-family: 'Raleway', sans-serif;
         background-color: var(--background-dark-brown-opacity);
         border-radius: 5px;
         padding: 50px 70px;
@@ -48,6 +47,7 @@
         @media (max-width: 540px) {
             font-size: 30px;
         }
+        font-family: 'Raleway', sans-serif;
     }
 
     &__bar {
@@ -58,10 +58,11 @@
 
     &__text {
         font-size: 20px;
-        line-height: 25px;
+        line-height: 30px;
+        font-weight: 300;
         @media (max-width: 540px) {
             font-size: 16px;
-            line-height: 20px;
+            line-height: 25px;
         }
     }
 
@@ -129,15 +130,15 @@
           }
       
           .slide1 {
-            background-image: url(https://source.unsplash.com/1000x750);
+            background-image: url(http://jackowiak.com.pl/img/woods1.jpg);
             animation: 20s slides-set-1 -0.1s infinite;
           }
           .slide2 {
-            background-image: url(https://source.unsplash.com/1001x751);
+            background-image: url(http://jackowiak.com.pl/img/woods2.jpg);
             animation: 20s slides-set-2 -0.1s infinite;
           }
           .slide3 {
-            background-image: url(https://source.unsplash.com/1002x752);
+            background-image: url(http://jackowiak.com.pl/img/woods3.jpg);
             animation: 20s slides-set-3 -0.1s infinite;
           }
       
@@ -192,17 +193,17 @@
           }
       
           .slide1 {
-            background-image: linear-gradient(to bottom, rgba(200,200,75,0.25) 0, rgba(200,75,75,0.5) 100%), url(https://source.unsplash.com/1000x750);
+            background-image: linear-gradient(to bottom, rgba(200,200,75,0.25) 0, rgba(200,75,75,0.5) 100%), url(http://jackowiak.com.pl/img/woods2.jpg);
             // background-image: url(../img/slideshow/hero-1.jpg);
             animation: 20s slides-set-1 -0.2s infinite;
           }
           .slide2 {
-            background-image: linear-gradient(to bottom, rgba(200,200,75,0.25) 0, rgba(200,75,75,0.5) 100%), url(https://source.unsplash.com/1001x751);
+            background-image: linear-gradient(to bottom, rgba(200,200,75,0.25) 0, rgba(200,75,75,0.5) 100%), url(http://jackowiak.com.pl/img/woods1.jpg);
             // background-image: url(../img/slideshow/hero-2.jpg);
             animation: 20s slides-set-2 -0.2s infinite;
           }
           .slide3 {
-            background-image: linear-gradient(to bottom, rgba(200,200,75,0.25) 0, rgba(200,75,75,0.5) 100%), url(https://source.unsplash.com/1002x752);
+            background-image: linear-gradient(to bottom, rgba(200,200,75,0.25) 0, rgba(200,75,75,0.5) 100%), url(http://jackowiak.com.pl/img/woods3.jpg);
             // background-image: url(../img/slideshow/hero-3.jpg);
             animation: 20s slides-set-3 -0.2s infinite;
           }
