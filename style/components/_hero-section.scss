@@ -1,14 +1,23 @@
 .hero-section {
     width: 100vw;
     height: 500px;
+    @media (max-width: 900px) {
+        height: 600px;
+    }
     @media (max-width: 768px) {
         height: 700px;
+    }
+    @media (max-width: 400px) {
+        height: 750px;
     }
     position: relative;
 
     &__copy {
         position: absolute;
         top: 70px;
+        @media(max-width: 850px) {
+            top: 40px;
+        }
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -36,6 +45,9 @@
     &__heading {
         font-size: 40px;
         text-transform: uppercase;
+        @media (max-width: 540px) {
+            font-size: 30px;
+        }
     }
 
     &__bar {
@@ -47,7 +59,7 @@
     &__text {
         font-size: 20px;
         line-height: 25px;
-        @media (max-width: 478px) {
+        @media (max-width: 540px) {
             font-size: 16px;
             line-height: 20px;
         }
@@ -59,22 +71,25 @@
 
     &__cta-button {
         padding: 15px 20px;
-        max-width: 200px;
+        width: 200px;
         margin-top: 30px;
         text-transform: uppercase;
         font-size: 18px;
         font-weight: normal;
-        background-color: white;
+        background: white;
         border: none;
         color: var(--main-brown);
+        @media (max-width: 400px) {
+            font-size: 14px;
+        }
+        transition: width 0.5s 0s ease, background 0.5s 0s ease, color 0.5s 0s ease;
     }
 
     &__cta-button:hover {
-        color: white;
-        background-color: var(--main-brown);
+        background: var(--main-brown);
         cursor: pointer;
-        transition: width 1s, color 0.3s;
         width: 230px;
+        color: white;
     }
 
     .wrapper-slide {
