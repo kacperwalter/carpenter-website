@@ -4,8 +4,9 @@
   --background-gray: #FAFAFA;
   --background-dark-brown-opacity: rgba(38, 15, 1, 0.5);
   --main-brown: #BF793B;
-  --text-gray: #A9A9A9;
+  --text-gray: #9D9D9D;
   --text-darkest-brown: #260F01;
+  --box-border: #EEEEEE;
 }
 
 html {
@@ -58,7 +59,8 @@ html {
   justify-content: flex-end;
   flex-direction: row;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  z-index: 3;
 }
 
 .top-label .phone {
@@ -83,7 +85,7 @@ html {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -538,6 +540,7 @@ html {
 }
 
 .services {
+  --box-width: 320px;
   margin-top: 50px;
   display: flex;
   flex-direction: row;
@@ -546,17 +549,37 @@ html {
 }
 
 .services .service-card {
-  width: 320px;
+  width: var(--box-width);
   position: relative;
 }
 
 .services .service-card__image {
-  width: 320px;
+  width: var(--box-width);
   z-index: 0;
 }
 
 .services .service-card__copy-box {
   position: absolute;
-  top: 0;
+  top: 170px;
+  background-color: white;
+  border: 1px solid var(--box-border);
+  padding: 25px 20px 25px 20px;
+}
+
+.services .service-card__copy-box:hover {
+  top: 250px;
+}
+
+.services .service-card__title {
+  margin-bottom: 15px;
+  color: var(--text-darkest-brown);
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.services .service-card__copy {
+  color: var(--text-gray);
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */
