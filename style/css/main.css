@@ -565,6 +565,7 @@ html {
   background-color: white;
   border: 1px solid var(--box-border);
   padding: 25px 20px 25px 20px;
+  transition: ease 0.3s 0s;
 }
 
 .services .service-card__copy-box--expanded {
