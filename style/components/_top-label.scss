@@ -6,7 +6,8 @@
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
-    position: sticky;
+    position: fixed;
+    z-index: 3;
 
     .phone {
         color: var(--text-gray);
