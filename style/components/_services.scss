@@ -8,6 +8,7 @@
 
     .service-card {
         width: var(--box-width);
+        height: 400px;
         position: relative;
 
         &__image {
@@ -23,9 +24,9 @@
             border: 1px solid var(--box-border);
             padding: 25px 20px 25px 20px;
 
-            &:hover {
-                top: 250px
-            }   
+            &--expanded {
+                top: 250px;
+            }  
         }
 
         &__title {
