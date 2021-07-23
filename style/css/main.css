@@ -548,10 +548,23 @@ html {
   justify-content: space-between;
 }
 
+@media (max-width: 1100px) {
+  .services {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
 .services .service-card {
   width: var(--box-width);
   height: 400px;
   position: relative;
+}
+
+@media (max-width: 1010px) {
+  .services .service-card:not(:first-child), .services .service-card:not(:nth-child(2)) {
+    margin-top: 50px;
+  }
 }
 
 .services .service-card__image {
@@ -566,10 +579,12 @@ html {
   border: 1px solid var(--box-border);
   padding: 25px 20px 25px 20px;
   transition: ease 0.3s 0s;
+  height: 250px;
 }
 
 .services .service-card__copy-box--expanded {
   top: 250px;
+  z-index: 3;
 }
 
 .services .service-card__title {
