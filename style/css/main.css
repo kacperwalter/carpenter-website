@@ -541,7 +541,6 @@ html {
 
 .services {
   --box-width: 320px;
-  margin-top: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -552,6 +551,12 @@ html {
   .services {
     justify-content: center;
     gap: 15px;
+  }
+}
+
+@media (min-width: 1010px) {
+  .services {
+    margin-top: 50px;
   }
 }
 
