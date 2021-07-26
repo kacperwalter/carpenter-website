@@ -1,0 +1,23 @@
+.about-us {
+    margin-top: 70px;
+    max-width: 100vw;
+    background-color: var(--background-gray);
+    padding: 50px 0px;
+
+    &__text-content {
+        max-width: 60%;
+        margin-top: 30px;
+    }
+
+    &__heading {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    &__simple-text {
+        color: var(--text-gray);
+        font-weight: 300;
+        margin-top: 25px;
+        line-height: 23px;
+    }
+}

@@ -604,4 +604,28 @@ html {
   color: var(--text-gray);
   font-weight: 300;
 }
+
+.about-us {
+  margin-top: 70px;
+  max-width: 100vw;
+  background-color: var(--background-gray);
+  padding: 50px 0px;
+}
+
+.about-us__text-content {
+  max-width: 60%;
+  margin-top: 30px;
+}
+
+.about-us__heading {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.about-us__simple-text {
+  color: var(--text-gray);
+  font-weight: 300;
+  margin-top: 25px;
+  line-height: 23px;
+}
 /*# sourceMappingURL=main.css.map */
