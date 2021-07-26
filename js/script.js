@@ -12,4 +12,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
         })
     })
 
+
+    const productCards = document.querySelectorAll('.product-card');
+
+    productCards.forEach((card) => {
+        card.addEventListener('mouseover', (event) => {
+            card.childNodes[3].classList.add('product-card__copy-box--expanded');
+        })
+
+        card.addEventListener('mouseleave', (event) => {
+            card.childNodes[3].classList.remove('product-card__copy-box--expanded');
+        })
+    })
+
 });
