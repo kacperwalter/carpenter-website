@@ -32,7 +32,7 @@ html {
 
 .heading {
   margin: 0 auto;
-  max-width: 200px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -542,8 +542,7 @@ html {
 .services {
   --box-width: 320px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -638,5 +637,65 @@ html {
   font-weight: 300;
   margin-top: 25px;
   line-height: 23px;
+}
+
+.products {
+  --product-box-width: 250px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.products .product-card {
+  width: var(--product-box-width);
+  height: 300px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.products .product-card__image {
+  width: var(--product-box-width);
+  z-index: 0;
+}
+
+.products .product-card__copy-box {
+  position: absolute;
+  top: 100px;
+  background-color: white;
+  border: 1px solid var(--box-border);
+  padding: 20px 15px 20px 15px;
+  transition: ease 0.3s 0s;
+  height: 240px;
+}
+
+.products .product-card__copy-box--expanded {
+  top: 150px;
+  z-index: 3;
+}
+
+.products .product-card__title {
+  margin-bottom: 10px;
+  color: var(--text-darkest-brown);
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.products .product-card__copy {
+  color: var(--text-gray);
+  font-weight: 300;
+}
+
+.products .product-card__bold {
+  color: var(--main-brown);
+}
+
+.image-filler {
+  width: 100vw;
+  height: 300px;
+  margin-top: 20px;
+  background-image: url(http://jackowiak.com.pl/img/woods2.jpg);
 }
 /*# sourceMappingURL=main.css.map */
