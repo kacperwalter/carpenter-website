@@ -1,0 +1,39 @@
+.what-characterizes {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    &__heading {
+        font-size: 27px;
+        font-weight: 400;
+
+        @media (max-width: 600px) {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    &__bold {
+        font-weight: 500;
+        color: var(--main-brown);
+    }
+
+    &__paragraph {
+        color: var(--text-gray);
+        font-weight: 300;
+        font-size: 15px;
+
+        @media (max-width: 600px) {
+            text-align: center;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        
+    }
+}
