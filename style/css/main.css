@@ -707,6 +707,19 @@ html {
   }
 }
 
+.image-filler2 {
+  width: 100vw;
+  height: 300px;
+  margin-top: 20px;
+  background-image: url(http://jackowiak.com.pl/img/woods2.jpg);
+}
+
+@media (max-width: 1000px) {
+  .image-filler2 {
+    height: 200px;
+  }
+}
+
 .what-characterizes {
   padding: 0 30px;
   display: grid;
