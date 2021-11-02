@@ -11,6 +11,7 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -232,6 +233,12 @@ html {
   .hero-section__text {
     font-size: 16px;
     line-height: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-section__text {
+    font-size: 15px;
   }
 }
 
@@ -543,7 +550,7 @@ html {
   --box-width: 320px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 1100px) {
@@ -702,6 +709,19 @@ html {
 
 @media (max-width: 1000px) {
   .image-filler {
+    height: 200px;
+  }
+}
+
+.image-filler2 {
+  width: 100vw;
+  height: 300px;
+  margin-top: 20px;
+  background-image: url(http://jackowiak.com.pl/img/woods2.jpg);
+}
+
+@media (max-width: 1000px) {
+  .image-filler2 {
     height: 200px;
   }
 }
