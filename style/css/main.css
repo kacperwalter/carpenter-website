@@ -544,7 +544,7 @@ html {
   --box-width: 320px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 1100px) {
