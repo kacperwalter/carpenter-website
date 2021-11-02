@@ -236,6 +236,12 @@ html {
   }
 }
 
+@media (max-width: 380px) {
+  .hero-section__text {
+    font-size: 15px;
+  }
+}
+
 .hero-section__button-anchor {
   max-width: 200px;
 }
